@@ -1,0 +1,10 @@
+{
+  "plugin_id": "chronicle.plugin.themes.default",
+  "name": "Default Themes",
+  "version": "1.0.0",
+  "author": "Chronicle",
+  "description": "Provides the four built-in Chronicle themes: Light, Dark, Navy & Pink, and Dark Teal. Install additional theme plugins to expand the available theme list.",
+  "iconUrl": null,
+  "supportedInterfaces": ["IThemePlugin"],
+  "settings": []
+}
