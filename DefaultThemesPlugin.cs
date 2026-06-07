@@ -15,13 +15,7 @@ public sealed class DefaultThemesPlugin : IThemePlugin
     public string Version  => "1.0.0";
     public string Author   => "Chronicle";
 
-    public IReadOnlyList<ThemeDefinition> GetThemes() =>
-    [
-        Light,
-        Dark,
-        NavyPink,
-        DarkTeal,
-    ];
+    public IReadOnlyList<ThemeDefinition> GetThemes() => AllThemes;
 
     // ── Light ──────────────────────────────────────────────────────────────────
 
@@ -194,4 +188,8 @@ public sealed class DefaultThemesPlugin : IThemePlugin
             ["--shadow"]               = "0 2px 8px rgba(0, 0, 0, 0.5)",
         }
     );
+
+    // ── Aggregated list (declared after all themes so static init order is correct) ──
+
+    private static readonly IReadOnlyList<ThemeDefinition> AllThemes = [Light, Dark, NavyPink, DarkTeal];
 }
