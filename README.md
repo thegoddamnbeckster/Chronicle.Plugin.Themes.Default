@@ -1,5 +1,7 @@
 # Chronicle.Plugin.Themes.Default
 
+[![Latest Release](https://img.shields.io/github/v/release/thegoddamnbeckster/Chronicle.Plugin.Themes.Default?style=flat-square&label=release)](https://github.com/thegoddamnbeckster/Chronicle.Plugin.Themes.Default/releases/latest)
+
 The default theme pack for [Chronicle](https://github.com/thegoddamnbeckster/Chronicle). Provides four built-in themes — **Light**, **Dark**, **Navy & Pink**, and **Dark Teal** — via Chronicle's `IThemePlugin` interface.
 
 Because themes are loaded from plugins at runtime, you can create your own theme pack and install it alongside this one. All themes from all installed theme plugins appear together in the Chronicle theme picker.
