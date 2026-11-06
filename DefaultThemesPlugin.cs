@@ -12,7 +12,7 @@ public sealed class DefaultThemesPlugin : IThemePlugin
 {
     public string PluginId => "chronicle.plugin.themes.default";
     public string Name     => "Default Themes";
-    public string Version  => "1.0.0";
+    public string Version  => System.Reflection.CustomAttributeExtensions.GetCustomAttribute<System.Reflection.AssemblyInformationalVersionAttribute>(typeof(DefaultThemesPlugin).Assembly)?.InformationalVersion.Split('+')[0] ?? "1.0.0";
     public string Author   => "Chronicle";
 
     public IReadOnlyList<ThemeDefinition> GetThemes() => AllThemes;
